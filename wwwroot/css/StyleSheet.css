@@ -1,0 +1,250 @@
+﻿/*---CSS Reset---*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font: inherit;
+    font-weight: 400;
+    line-height: 1;
+    vertical-align: baseline;
+    border: 0;
+    border-radius: 0;
+    color: inherit;
+}
+
+li,
+ul {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    background-color: #101010;
+    padding: 30px;
+    height: 100px;
+}
+
+footer {
+    background-color: #101010;
+    text-align: center;
+    padding: 40px;
+}
+
+#logo {
+    width: 250px;
+    float: left;
+}
+
+.main {
+    background-color: #3b3b3b;
+    display: flex;
+    clear: both;
+}
+
+#mainNav {
+    background-color: #2E2E2E;
+    width: 200px;
+    margin-left: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+.mainContent {
+    background-color: #2E2E2E;
+    margin: 40px;
+    min-height: 55vh;
+    padding: 40px;
+    width: 80%;
+
+}
+
+p, a, ol, li, ul {
+    color: whitesmoke;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.05em;
+}
+
+.navLink {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: #525252;
+    padding: 10px;
+    font-size: 1.2em;
+    font-family: 'Dosis', sans-serif;
+}
+
+.navLink:hover {
+    background-color: #101010;
+}
+
+.navLink.active {
+    background-color: #101010;
+}
+
+#mainNav a {
+    display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Slab', serif;
+    color: whitesmoke;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2.4em;
+    margin-bottom: 40px;
+    border-bottom: 1px solid whitesmoke;
+    padding-bottom: 5px;
+}
+
+h2 {
+    font-size: 1.4em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+#today {
+    position: absolute;
+    top: 40px;
+    right: 60px;
+    font-size: 1.4em;
+}
+
+#dateStr {
+    font-weight: 500;
+}
+
+#date {
+    font-weight: 400;
+}
+
+#info {
+    margin-bottom: 40px;
+}
+
+li {
+    line-height: 1.2em;
+}
+
+h1#firstHead {
+    border-bottom: none;
+    margin-top: 20px;
+}
+
+#catPic {
+    max-width: 75%;
+}
+
+#btn {
+    display: none;
+}
+
+#thirdHead {
+    display: none;
+}
+
+#fourthHead {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .main {
+        display: block;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    #mainNav {
+        margin-top: 0;
+        width: initial;
+        margin-right: 40px;
+        display: none;
+    }
+
+    #btn {
+        display: block;
+        position: absolute;
+        top: 121px;
+        right: 60px;
+        background-color: #3b3b3b;
+        color: white;
+        padding: 10px;
+        font-size: 1.2em;
+        font-family: 'Dosis', sans-serif;
+    }
+
+    .mainContent {
+        margin-bottom: 0;
+        width: initial;
+    }
+
+    #catPic {
+        max-width: 100%;
+    }
+
+    #logo {
+        float: none;
+        margin: 0 auto;
+    }
+
+    #today {
+        position: absolute;
+        top: 130px;
+        left: 60px;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 500px) {
+    #firstHead, #secondHead {
+        display: none;
+    }
+
+    #thirdHead, #fourthHead {
+        display: block;
+        font-size: 1.2em;
+        border: none;
+    }
+
+    #fourthHead {
+        font-size: 1em;
+    }
+
+    #catPic {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    #btn {
+        position: absolute;
+        right: 20px;
+    }
+
+    #logo {
+        margin-left: -40px;
+    }
+
+    #today {
+        position: absolute;
+        left: 25px;
+    }
+}

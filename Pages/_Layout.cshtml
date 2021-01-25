@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewData["Title"] - Basics</title>
+    <link rel="stylesheet" href="~/css/StyleSheet.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Roboto+Slab&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="~/basicslogo.png" alt="Logotyp" id="logo" />
+        <p id="today">Dagens datum är: @DateTime.Today.ToString("yyyy-MM-dd")</p>
+        <button onclick="openMenu()" id="btn">Meny</button>
+    </header>
+    <div class="main">
+        <div id="mainNav">
+            <a class="navLink" href="/Index">Start</a>
+            <a class="navLink" href="/Razor">Razor</a>
+            <a class="navLink" href="/About">Om sidan</a>
+        </div>
+        <div class="mainContent">
+            @RenderBody()
+        </div>
+    </div>
+    <footer>
+        <p>Av Charlotte Ranemo - Kontakta mig via e-post: <a href="mailto:chra1901@student.miun.se">chra1901@student.miun.se</a></p>
+    </footer>
+    <script src="~/js/JavaScript.js" type="text/javascript"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
