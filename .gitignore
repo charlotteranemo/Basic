@@ -3,3 +3,12 @@
 ################################################################################
 
 /obj/Release/netcoreapp3.1
+/obj/Basic.csproj.nuget.dgspec.json
+/obj/Basic.csproj.nuget.g.props
+/obj/Basic.csproj.nuget.g.targets
+/obj/project.assets.json
+/obj/project.nuget.cache
+/obj/Debug/netcoreapp3.1
+/bin/Debug/netcoreapp3.1
+/.vs/Basic
+/.vs
